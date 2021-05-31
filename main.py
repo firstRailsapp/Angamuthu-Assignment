@@ -43,7 +43,6 @@ class Main():
                 for field in bank_info['fields']:
                     name    = field['name']
                     value   = dict_data[name]
-                    dd["bank_name"] = bank_name
                     dd[name]  = self.convert_by_type(field, value)
                 self.transform(dd, transform_ar) 
                 data.append(dd)
